@@ -1,4 +1,4 @@
-import React, {useReducer, useEffect} from "react";
+import React, {useReducer} from "react";
 import {Route, Routes, useNavigate} from "react-router-dom";
 import Booking from "./Booking";
 import ConfirmBooking from "./ConfirmBooking";

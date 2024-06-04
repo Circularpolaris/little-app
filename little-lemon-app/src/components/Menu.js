@@ -27,8 +27,8 @@ const Menu = () => {
   return (
     <div className="menu-container">
       <div className="menu-header">
-        <h2>This week's specials!</h2>
-        <button>Online menu</button>
+        <h3>Chef's specials</h3>
+        <button>Menu</button>
       </div>
       <div className="cards">
         {recipes.map((recipe) => (
@@ -40,7 +40,7 @@ const Menu = () => {
                 <p>${recipe.price}</p>
               </div>
               <p>{recipe.description}</p>
-              <button className="orderbtn" onClick={() => handleOrder(recipe.id)}>Order now</button>
+              <button className="orderbtn" data-testid="orderbtn" onClick={() => handleOrder(recipe.id)}>Order now</button>
             </div>
           </div>
         ))}

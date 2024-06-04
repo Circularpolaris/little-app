@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import BookingForm from "./BookingForm";
 
 const Booking = (props) => {
