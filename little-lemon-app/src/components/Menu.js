@@ -1,5 +1,5 @@
 import React from "react";
-import recipes from "../recipes";
+import specials from "../specials";
 import Swal from "sweetalert2";
 
 const Menu = () => {
@@ -31,16 +31,16 @@ const Menu = () => {
         <button>Menu</button>
       </div>
       <div className="cards">
-        {recipes.map((recipe) => (
-          <div key={recipe.id} className="menu-items">
-            <img src={recipe.image} alt="t" />
+        {specials.map((special) => (
+          <div key={special.id} className="menu-items">
+            <img src={special.image} alt="t" />
             <div className="menu-content">
               <div className="heading">
-                <h4>{recipe.title}</h4>
-                <p>${recipe.price}</p>
+                <h4>{special.title}</h4>
+                <p>${special.price}</p>
               </div>
-              <p>{recipe.description}</p>
-              <button className="orderbtn" data-testid="orderbtn" onClick={() => handleOrder(recipe.id)}>Order now</button>
+              <p>{special.description}</p>
+              <button className="orderbtn" data-testid="orderbtn" onClick={() => handleOrder(special.id)}>Order now</button>
             </div>
           </div>
         ))}

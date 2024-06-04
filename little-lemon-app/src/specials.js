@@ -1,16 +1,16 @@
 
 import Bruchetta from "./images/bruchetta.png"
 import GreekSalad from "./images/greek-salad.jpg"
-import LemonDessert from "./images/dessert.jpg"
+import LemonCake from "./images/lemon-cake.jpg"
 
-const recipes = [
+const specials = [
   {
     id: 1,
-    title: "Greek salad",
+    title: "Greek Salad",
     price: 18.99,
     image: GreekSalad,
     description:
-      "The famous greek salad of crispy lettuce, peppers, olives and our Chicago style fota cheese, garnished with rosemary croutons",
+      "The famous greek salad of crispy lettuce, peppers, olives and our Chicago style feta cheese, garnished with rosemary",
   },
   {
     id: 2,
@@ -22,13 +22,13 @@ const recipes = [
   },
   {
     id: 3,
-    title: "Lemon Dessert",
+    title: "Lemon Layer Cake",
     price: 8.99,
-    image: LemonDessert,
+    image: LemonCake,
     description:
       "This comes straight from grandma's recipe book, every last ingredient has been sourced and is as authentic as can be imagined.",
   },
 
 ];
 
-export default recipes;
+export default specials;
